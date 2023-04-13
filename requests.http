@@ -1,0 +1,30 @@
+POST http://localhost:5277/resistors/value-from-bands
+Content-Type: application/json
+
+{
+  "firstBand": "green",
+  "secondBand": "Blue",
+  "multiplier": "Yellow",
+  "tolerance": "Gold"
+}
+
+###
+
+POST http://localhost:5277/resistors/value-from-bands
+Content-Type: application/json
+
+{
+  "firstBand": "Red",
+  "secondBand": "Orange",
+  "thirdBand": "Violet",
+  "multiplier": "Black",
+  "tolerance": "Brown"
+}
+
+###
+
+GET http://localhost:5277/resistors/value-from-bands?FirstBand=Red&SecondBand=Orange&ThirdBand=Violet&Multiplier=Black&Tolerance=Brown
+
+###
+
+GET http://localhost:5277/resistors/value-from-bands?FirstBand=Green&SecondBand=Blue&Multiplier=Yellow&Tolerance=Gold
